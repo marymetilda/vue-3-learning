@@ -3,7 +3,12 @@
   <GreetHello name="Clark" heroName="superman" />
   <GreetHello name="Diana" heroName="wonder woman" />
   <GreetHello :name="name" :heroName="description" /> -->
-  <article-compornet id="my-article" title="Article Title" :likes="50" :isPublished="true" />
+  <article-compornet
+    id="my-article"
+    title="Article Title"
+    :likes="50"
+    :isPublished="true"
+  />
 </template>
 
 <script>
