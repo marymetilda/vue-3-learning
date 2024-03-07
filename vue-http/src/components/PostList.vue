@@ -1,5 +1,5 @@
 <template>
-  <button @click="getPosts">Add Posts</button>
+  <!-- <button @click="getPosts">Add Posts</button> -->
   <h3 v-if="errorMsg">{{ errorMsg }}</h3>
   <div v-for="post in posts" :key="post.id">
     <h3>{{ post.id }} {{ post.title }}</h3>
@@ -13,6 +13,9 @@ import axios from "axios";
 
 export default {
   name: "PostList",
+  created() {
+    this.getPosts();
+  },
   data() {
     return {
       posts: [],
